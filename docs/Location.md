@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.location import Location
+from openalex_api.models.location import Location
 
 # TODO update the JSON string below
 json = "{}"

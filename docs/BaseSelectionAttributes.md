@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.base_selection_attributes import BaseSelectionAttributes
+from openalex_api.models.base_selection_attributes import BaseSelectionAttributes
 
 # TODO update the JSON string below
 json = "{}"

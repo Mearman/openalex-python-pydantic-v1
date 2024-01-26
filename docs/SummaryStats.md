@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.summary_stats import SummaryStats
+from openalex_api.models.summary_stats import SummaryStats
 
 # TODO update the JSON string below
 json = "{}"

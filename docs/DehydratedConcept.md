@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.dehydrated_concept import DehydratedConcept
+from openalex_api.models.dehydrated_concept import DehydratedConcept
 
 # TODO update the JSON string below
 json = "{}"

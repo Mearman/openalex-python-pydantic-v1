@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.error_message import ErrorMessage
+from openalex_api.models.error_message import ErrorMessage
 
 # TODO update the JSON string below
 json = "{}"

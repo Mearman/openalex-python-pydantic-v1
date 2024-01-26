@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.sources_array import SourcesArray
+from openalex_api.models.sources_array import SourcesArray
 
 # TODO update the JSON string below
 json = "{}"

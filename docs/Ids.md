@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.ids import Ids
+from openalex_api.models.ids import Ids
 
 # TODO update the JSON string below
 json = "{}"

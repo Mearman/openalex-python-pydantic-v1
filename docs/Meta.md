@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.meta import Meta
+from openalex_api.models.meta import Meta
 
 # TODO update the JSON string below
 json = "{}"

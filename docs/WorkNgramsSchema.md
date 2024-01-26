@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.work_ngrams_schema import WorkNgramsSchema
+from openalex_api.models.work_ngrams_schema import WorkNgramsSchema
 
 # TODO update the JSON string below
 json = "{}"

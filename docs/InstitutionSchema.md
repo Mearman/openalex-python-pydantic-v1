@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution_schema import InstitutionSchema
 
 # TODO update the JSON string below
 json = "{}"

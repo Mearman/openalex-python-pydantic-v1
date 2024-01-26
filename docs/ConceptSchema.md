@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.concept_schema import ConceptSchema
+from openalex_api.models.concept_schema import ConceptSchema
 
 # TODO update the JSON string below
 json = "{}"

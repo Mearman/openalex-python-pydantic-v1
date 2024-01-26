@@ -1,4 +1,4 @@
-# openalex_api_pydantic_v1.PeopleApi
+# openalex_api.PeopleApi
 
 All URIs are relative to *https://api.openalex.org*
 
@@ -19,22 +19,22 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openalex_api_pydantic_v1
-from openalex_api_pydantic_v1.models.person_response_schema import PersonResponseSchema
-from openalex_api_pydantic_v1.rest import ApiException
+import openalex_api
+from openalex_api.models.person_response_schema import PersonResponseSchema
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openalex_api_pydantic_v1.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with openalex_api_pydantic_v1.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openalex_api_pydantic_v1.PeopleApi(api_client)
+    api_instance = openalex_api.PeopleApi(api_client)
     id = None # object | 
     select = 'select_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)

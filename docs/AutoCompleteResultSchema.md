@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.auto_complete_result_schema import AutoCompleteResultSchema
+from openalex_api.models.auto_complete_result_schema import AutoCompleteResultSchema
 
 # TODO update the JSON string below
 json = "{}"

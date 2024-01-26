@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.source_schema import SourceSchema
+from openalex_api.models.source_schema import SourceSchema
 
 # TODO update the JSON string below
 json = "{}"

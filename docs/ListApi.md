@@ -1,4 +1,4 @@
-# openalex_api_pydantic_v1.ListApi
+# openalex_api.ListApi
 
 All URIs are relative to *https://api.openalex.org*
 
@@ -19,22 +19,22 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import openalex_api_pydantic_v1
-from openalex_api_pydantic_v1.models.works_response_schema import WorksResponseSchema
-from openalex_api_pydantic_v1.rest import ApiException
+import openalex_api
+from openalex_api.models.works_response_schema import WorksResponseSchema
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openalex_api_pydantic_v1.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with openalex_api_pydantic_v1.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openalex_api_pydantic_v1.ListApi(api_client)
+    api_instance = openalex_api.ListApi(api_client)
     api_key = 'api_key_example' # str |  (optional)
     cursor = 'cursor_example' # str |  (optional)
     group_by = 'group_by_example' # str |  (optional)

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.associated_institution import AssociatedInstitution
+from openalex_api.models.associated_institution import AssociatedInstitution
 
 # TODO update the JSON string below
 json = "{}"

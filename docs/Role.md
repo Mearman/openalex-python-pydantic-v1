@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.role import Role
+from openalex_api.models.role import Role
 
 # TODO update the JSON string below
 json = "{}"

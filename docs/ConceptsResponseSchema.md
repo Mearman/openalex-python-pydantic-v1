@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.concepts_response_schema import ConceptsResponseSchema
+from openalex_api.models.concepts_response_schema import ConceptsResponseSchema
 
 # TODO update the JSON string below
 json = "{}"

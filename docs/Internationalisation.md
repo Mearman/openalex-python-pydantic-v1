@@ -272,7 +272,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.internationalisation import Internationalisation
+from openalex_api.models.internationalisation import Internationalisation
 
 # TODO update the JSON string below
 json = "{}"

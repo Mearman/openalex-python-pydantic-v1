@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.work_attributes import WorkAttributes
+from openalex_api.models.work_attributes import WorkAttributes
 
 # TODO update the JSON string below
 json = "{}"

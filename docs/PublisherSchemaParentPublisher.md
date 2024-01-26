@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openalex_api_pydantic_v1.models.publisher_schema_parent_publisher import PublisherSchemaParentPublisher
+from openalex_api.models.publisher_schema_parent_publisher import PublisherSchemaParentPublisher
 
 # TODO update the JSON string below
 json = "{}"
