@@ -256,7 +256,7 @@ No authorization required
 
 Get Random Author
 
-Get a single author by id
+Get a random author
 
 ### Example
 

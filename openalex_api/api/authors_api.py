@@ -610,7 +610,7 @@ class AuthorsApi:
     def get_random_author(self, select : Optional[StrictStr] = None, user_agent : Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None, mailto : Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None, **kwargs) -> Author:  # noqa: E501
         """Get Random Author  # noqa: E501
 
-        Get a single author by id  # noqa: E501
+        Get a random author  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
@@ -644,7 +644,7 @@ class AuthorsApi:
     def get_random_author_with_http_info(self, select : Optional[StrictStr] = None, user_agent : Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None, mailto : Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None, **kwargs) -> ApiResponse:  # noqa: E501
         """Get Random Author  # noqa: E501
 
-        Get a single author by id  # noqa: E501
+        Get a random author  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
