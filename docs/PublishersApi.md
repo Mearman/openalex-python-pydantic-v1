@@ -84,7 +84,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_publisher**
-> PublisherSchema get_publisher(id, select=select, user_agent=user_agent, mailto=mailto)
+> Publisher get_publisher(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /publishers/{id}
 
@@ -96,7 +96,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher import Publisher
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublisherSchema**](PublisherSchema.md)
+[**Publisher**](Publisher.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_publishers**
-> PublishersResponseSchema get_publishers(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> Publishers get_publishers(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /publishers
 
@@ -171,7 +171,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.publishers_response_schema import PublishersResponseSchema
+from openalex_api.models.publishers import Publishers
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublishersResponseSchema**](PublishersResponseSchema.md)
+[**Publishers**](Publishers.md)
 
 ### Authorization
 
@@ -252,7 +252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_publisher**
-> PublisherSchema get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
+> Publisher get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
 
 /publishers/random
 
@@ -264,7 +264,7 @@ Get a random publisher
 import time
 import os
 import openalex_api
-from openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher import Publisher
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublisherSchema**](PublisherSchema.md)
+[**Publisher**](Publisher.md)
 
 ### Authorization
 

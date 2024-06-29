@@ -5,7 +5,7 @@ All URIs are relative to *https://api.openalex.org*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_author**](SingleApi.md#get_author) | **GET** /authors/{id} | Get Author
-[**get_concept**](SingleApi.md#get_concept) | **GET** /concepts/{id} | /concepts/{id}
+[**get_concept_by_id**](SingleApi.md#get_concept_by_id) | **GET** /concepts/{id} | /concepts/{id}
 [**get_funder**](SingleApi.md#get_funder) | **GET** /funders/{id} | /funders/{id}
 [**get_institution**](SingleApi.md#get_institution) | **GET** /institutions/{id} | /institutions/{id}
 [**get_publisher**](SingleApi.md#get_publisher) | **GET** /publishers/{id} | /publishers/{id}
@@ -17,6 +17,7 @@ Method | HTTP request | Description
 [**get_random_source**](SingleApi.md#get_random_source) | **GET** /sources/random | /sources/random
 [**get_random_work**](SingleApi.md#get_random_work) | **GET** /works/random | /works/random
 [**get_source**](SingleApi.md#get_source) | **GET** /sources/{id} | /sources/{id}
+[**get_topic_by_id**](SingleApi.md#get_topic_by_id) | **GET** /topics/{id} | /topics/{id}
 [**get_work**](SingleApi.md#get_work) | **GET** /works/{id} | /works/{id}
 [**get_work_ngrams**](SingleApi.md#get_work_ngrams) | **GET** /works/{id}/ngrams | /works/{id}/ngrams
 
@@ -96,8 +97,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_concept**
-> Concept get_concept(id, select=select, user_agent=user_agent, mailto=mailto)
+# **get_concept_by_id**
+> Concept get_concept_by_id(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /concepts/{id}
 
@@ -131,11 +132,11 @@ with openalex_api.ApiClient(configuration) as api_client:
 
     try:
         # /concepts/{id}
-        api_response = api_instance.get_concept(id, select=select, user_agent=user_agent, mailto=mailto)
-        print("The response of SingleApi->get_concept:\n")
+        api_response = api_instance.get_concept_by_id(id, select=select, user_agent=user_agent, mailto=mailto)
+        print("The response of SingleApi->get_concept_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling SingleApi->get_concept: %s\n" % e)
+        print("Exception when calling SingleApi->get_concept_by_id: %s\n" % e)
 ```
 
 
@@ -172,7 +173,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_funder**
-> FunderSchema get_funder(id, select=select, user_agent=user_agent, mailto=mailto)
+> Funder get_funder(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /funders/{id}
 
@@ -184,7 +185,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder import Funder
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -226,7 +227,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FunderSchema**](FunderSchema.md)
+[**Funder**](Funder.md)
 
 ### Authorization
 
@@ -247,7 +248,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_institution**
-> InstitutionSchema get_institution(id, select=select, user_agent=user_agent, mailto=mailto)
+> Institution get_institution(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /institutions/{id}
 
@@ -259,7 +260,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution import Institution
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -301,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionSchema**](InstitutionSchema.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 
@@ -322,7 +323,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_publisher**
-> PublisherSchema get_publisher(id, select=select, user_agent=user_agent, mailto=mailto)
+> Publisher get_publisher(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /publishers/{id}
 
@@ -334,7 +335,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher import Publisher
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -376,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublisherSchema**](PublisherSchema.md)
+[**Publisher**](Publisher.md)
 
 ### Authorization
 
@@ -543,7 +544,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_funder**
-> FunderSchema get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
+> Funder get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
 
 /funders/random
 
@@ -555,7 +556,7 @@ Get a random funder
 import time
 import os
 import openalex_api
-from openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder import Funder
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -595,7 +596,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FunderSchema**](FunderSchema.md)
+[**Funder**](Funder.md)
 
 ### Authorization
 
@@ -616,7 +617,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_institution**
-> InstitutionSchema get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
+> Institution get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
 
 /institutions/random
 
@@ -628,7 +629,7 @@ Get a random institution
 import time
 import os
 import openalex_api
-from openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution import Institution
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -668,7 +669,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionSchema**](InstitutionSchema.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 
@@ -689,7 +690,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_publisher**
-> PublisherSchema get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
+> Publisher get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
 
 /publishers/random
 
@@ -701,7 +702,7 @@ Get a random publisher
 import time
 import os
 import openalex_api
-from openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher import Publisher
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -741,7 +742,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublisherSchema**](PublisherSchema.md)
+[**Publisher**](Publisher.md)
 
 ### Authorization
 
@@ -762,7 +763,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_source**
-> SourceSchema get_random_source(select=select, user_agent=user_agent, mailto=mailto)
+> Source get_random_source(select=select, user_agent=user_agent, mailto=mailto)
 
 /sources/random
 
@@ -774,7 +775,7 @@ Get a random source
 import time
 import os
 import openalex_api
-from openalex_api.models.source_schema import SourceSchema
+from openalex_api.models.source import Source
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -814,7 +815,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourceSchema**](SourceSchema.md)
+[**Source**](Source.md)
 
 ### Authorization
 
@@ -835,7 +836,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_work**
-> WorkSchema get_random_work(select=select, user_agent=user_agent, mailto=mailto)
+> Work get_random_work(select=select, user_agent=user_agent, mailto=mailto)
 
 /works/random
 
@@ -847,7 +848,7 @@ Get a random work
 import time
 import os
 import openalex_api
-from openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work import Work
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -887,7 +888,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkSchema**](WorkSchema.md)
+[**Work**](Work.md)
 
 ### Authorization
 
@@ -908,7 +909,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_source**
-> SourceSchema get_source(id, select=select, user_agent=user_agent, mailto=mailto)
+> Source get_source(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /sources/{id}
 
@@ -920,7 +921,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.source_schema import SourceSchema
+from openalex_api.models.source import Source
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -962,7 +963,82 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourceSchema**](SourceSchema.md)
+[**Source**](Source.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+**403** |  |  -  |
+**0** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_topic_by_id**
+> Topic get_topic_by_id(id, per_page=per_page, user_agent=user_agent, mailto=mailto)
+
+/topics/{id}
+
+
+
+### Example
+
+```python
+import time
+import os
+import openalex_api
+from openalex_api.models.topic import Topic
+from openalex_api.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to https://api.openalex.org
+# See configuration.py for a list of all supported configuration parameters.
+configuration = openalex_api.Configuration(
+    host = "https://api.openalex.org"
+)
+
+
+# Enter a context with an instance of the API client
+with openalex_api.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = openalex_api.SingleApi(api_client)
+    id = None # object | 
+    per_page = 3 # int |  (optional)
+    user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
+    mailto = None # object | The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). (optional)
+
+    try:
+        # /topics/{id}
+        api_response = api_instance.get_topic_by_id(id, per_page=per_page, user_agent=user_agent, mailto=mailto)
+        print("The response of SingleApi->get_topic_by_id:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling SingleApi->get_topic_by_id: %s\n" % e)
+```
+
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | [**object**](.md)|  | 
+ **per_page** | **int**|  | [optional] 
+ **user_agent** | [**object**](.md)| [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) | [optional] 
+ **mailto** | [**object**](.md)| The API is the primary way to get OpenAlex data. It&#39;s free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like &#x60;mailto:example@domain.com&#x60;, or in the User-Agent request header, like &#x60;User-Agent: my-app (mailto:example@domain.com)&#x60;. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). | [optional] 
+
+### Return type
+
+[**Topic**](Topic.md)
 
 ### Authorization
 
@@ -983,7 +1059,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_work**
-> WorkSchema get_work(id, select=select, user_agent=user_agent, mailto=mailto)
+> Work get_work(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /works/{id}
 
@@ -995,7 +1071,7 @@ Get a single work by its id
 import time
 import os
 import openalex_api
-from openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work import Work
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -1037,7 +1113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkSchema**](WorkSchema.md)
+[**Work**](Work.md)
 
 ### Authorization
 
@@ -1058,7 +1134,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_work_ngrams**
-> WorkNgramsSchema get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
+> Ngrams get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
 
 /works/{id}/ngrams
 
@@ -1070,7 +1146,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.work_ngrams_schema import WorkNgramsSchema
+from openalex_api.models.ngrams import Ngrams
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -1110,7 +1186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkNgramsSchema**](WorkNgramsSchema.md)
+[**Ngrams**](Ngrams.md)
 
 ### Authorization
 

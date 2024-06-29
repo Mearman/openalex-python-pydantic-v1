@@ -89,7 +89,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_work**
-> WorkSchema get_random_work(select=select, user_agent=user_agent, mailto=mailto)
+> Work get_random_work(select=select, user_agent=user_agent, mailto=mailto)
 
 /works/random
 
@@ -101,7 +101,7 @@ Get a random work
 import time
 import os
 import openalex_api
-from openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work import Work
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkSchema**](WorkSchema.md)
+[**Work**](Work.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_work**
-> WorkSchema get_work(id, select=select, user_agent=user_agent, mailto=mailto)
+> Work get_work(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /works/{id}
 
@@ -174,7 +174,7 @@ Get a single work by its id
 import time
 import os
 import openalex_api
-from openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work import Work
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkSchema**](WorkSchema.md)
+[**Work**](Work.md)
 
 ### Authorization
 
@@ -237,7 +237,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_work_ngrams**
-> WorkNgramsSchema get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
+> Ngrams get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
 
 /works/{id}/ngrams
 
@@ -249,7 +249,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.work_ngrams_schema import WorkNgramsSchema
+from openalex_api.models.ngrams import Ngrams
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -289,7 +289,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkNgramsSchema**](WorkNgramsSchema.md)
+[**Ngrams**](Ngrams.md)
 
 ### Authorization
 
@@ -310,7 +310,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_works**
-> WorksResponseSchema get_works(api_key=api_key, cursor=cursor, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, filter=filter, user_agent=user_agent, mailto=mailto)
+> WorksResponse get_works(api_key=api_key, cursor=cursor, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, filter=filter, user_agent=user_agent, mailto=mailto)
 
 /works
 
@@ -322,7 +322,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.works_response_schema import WorksResponseSchema
+from openalex_api.models.works_response import WorksResponse
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorksResponseSchema**](WorksResponseSchema.md)
+[**WorksResponse**](WorksResponse.md)
 
 ### Authorization
 

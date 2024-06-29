@@ -84,7 +84,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_funder**
-> FunderSchema get_funder(id, select=select, user_agent=user_agent, mailto=mailto)
+> Funder get_funder(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /funders/{id}
 
@@ -96,7 +96,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder import Funder
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FunderSchema**](FunderSchema.md)
+[**Funder**](Funder.md)
 
 ### Authorization
 
@@ -252,7 +252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_funder**
-> FunderSchema get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
+> Funder get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
 
 /funders/random
 
@@ -264,7 +264,7 @@ Get a random funder
 import time
 import os
 import openalex_api
-from openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder import Funder
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FunderSchema**](FunderSchema.md)
+[**Funder**](Funder.md)
 
 ### Authorization
 

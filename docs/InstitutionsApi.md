@@ -84,7 +84,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_institution**
-> InstitutionSchema get_institution(id, select=select, user_agent=user_agent, mailto=mailto)
+> Institution get_institution(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /institutions/{id}
 
@@ -96,7 +96,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution import Institution
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionSchema**](InstitutionSchema.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 
@@ -159,7 +159,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_institutions**
-> InstitutionsResponseSchema get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> Institutions get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /institutions
 
@@ -171,7 +171,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.institutions_response_schema import InstitutionsResponseSchema
+from openalex_api.models.institutions import Institutions
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionsResponseSchema**](InstitutionsResponseSchema.md)
+[**Institutions**](Institutions.md)
 
 ### Authorization
 
@@ -252,7 +252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_institution**
-> InstitutionSchema get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
+> Institution get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
 
 /institutions/random
 
@@ -264,7 +264,7 @@ Get a random institution
 import time
 import os
 import openalex_api
-from openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution import Institution
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionSchema**](InstitutionSchema.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 

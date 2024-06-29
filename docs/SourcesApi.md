@@ -84,7 +84,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_source**
-> SourceSchema get_random_source(select=select, user_agent=user_agent, mailto=mailto)
+> Source get_random_source(select=select, user_agent=user_agent, mailto=mailto)
 
 /sources/random
 
@@ -96,7 +96,7 @@ Get a random source
 import time
 import os
 import openalex_api
-from openalex_api.models.source_schema import SourceSchema
+from openalex_api.models.source import Source
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourceSchema**](SourceSchema.md)
+[**Source**](Source.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_source**
-> SourceSchema get_source(id, select=select, user_agent=user_agent, mailto=mailto)
+> Source get_source(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /sources/{id}
 
@@ -169,7 +169,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.source_schema import SourceSchema
+from openalex_api.models.source import Source
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourceSchema**](SourceSchema.md)
+[**Source**](Source.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_sources**
-> SourcesArray get_sources(group_by=group_by, user_agent=user_agent, mailto=mailto)
+> Sources get_sources(group_by=group_by, user_agent=user_agent, mailto=mailto)
 
 /sources
 
@@ -244,7 +244,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.sources_array import SourcesArray
+from openalex_api.models.sources import Sources
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourcesArray**](SourcesArray.md)
+[**Sources**](Sources.md)
 
 ### Authorization
 
