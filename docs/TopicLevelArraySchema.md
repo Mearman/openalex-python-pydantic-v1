@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**siblings** | **object** |  | [optional] 
+**siblings** | [**List[TopicLevelSchema]**](TopicLevelSchema.md) |  | [optional] 
 
 ## Example
 
@@ -21,7 +21,7 @@ print TopicLevelArraySchema.to_json()
 # convert the object into a dict
 topic_level_array_schema_dict = topic_level_array_schema_instance.to_dict()
 # create an instance of TopicLevelArraySchema from a dict
-topic_level_array_schema_form_dict = topic_level_array_schema.from_dict(topic_level_array_schema_dict)
+topic_level_array_schema_from_dict = TopicLevelArraySchema.from_dict(topic_level_array_schema_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

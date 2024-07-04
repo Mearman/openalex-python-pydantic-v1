@@ -4,10 +4,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currency** | **object** |  | 
-**provenance** | **object** |  | 
-**value** | **object** |  | 
-**value_usd** | **object** |  | 
+**currency** | **str** |  | 
+**provenance** | **str** |  | 
+**value** | **int** |  | 
+**value_usd** | **int** |  | 
 
 ## Example
 
@@ -24,7 +24,7 @@ print Apc.to_json()
 # convert the object into a dict
 apc_dict = apc_instance.to_dict()
 # create an instance of Apc from a dict
-apc_form_dict = apc.from_dict(apc_dict)
+apc_from_dict = Apc.from_dict(apc_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

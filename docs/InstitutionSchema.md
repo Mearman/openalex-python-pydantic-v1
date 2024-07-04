@@ -4,31 +4,31 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**associated_institutions** | **object** |  | [optional] 
-**cited_by_count** | **object** |  | [optional] 
-**country_code** | **object** |  | [optional] 
-**counts_by_year** | **object** |  | [optional] 
-**created_date** | **object** |  | [optional] 
-**display_name** | **object** |  | 
-**display_name_acronyms** | **object** |  | [optional] 
-**display_name_alternatives** | **object** |  | [optional] 
+**associated_institutions** | [**List[AssociatedInstitution]**](AssociatedInstitution.md) |  | [optional] 
+**cited_by_count** | **int** |  | [optional] 
+**country_code** | **str** |  | [optional] 
+**counts_by_year** | [**List[CountsByYearInner]**](CountsByYearInner.md) |  | [optional] 
+**created_date** | **str** |  | [optional] 
+**display_name** | **str** |  | 
+**display_name_acronyms** | **List[str]** |  | [optional] 
+**display_name_alternatives** | **List[str]** |  | [optional] 
 **geo** | [**Geo**](Geo.md) |  | [optional] 
-**homepage_url** | **object** |  | [optional] 
-**id** | **object** |  | 
+**homepage_url** | **str** |  | [optional] 
+**id** | **str** |  | 
 **ids** | [**Ids**](Ids.md) |  | [optional] 
-**image_thumbnail_url** | **object** |  | [optional] 
-**image_url** | **object** |  | [optional] 
+**image_thumbnail_url** | **str** |  | [optional] 
+**image_url** | **str** |  | [optional] 
 **international** | [**InternationalDisplayName**](InternationalDisplayName.md) |  | [optional] 
-**lineage** | **object** |  | [optional] 
-**repositories** | **object** |  | [optional] 
-**roles** | **object** |  | [optional] 
-**ror** | **object** |  | [optional] 
+**lineage** | **List[str]** |  | [optional] 
+**repositories** | [**List[RepositoriesArrayInner]**](RepositoriesArrayInner.md) |  | [optional] 
+**roles** | [**List[Role]**](Role.md) |  | [optional] 
+**ror** | **str** |  | [optional] 
 **summary_stats** | [**SummaryStats**](SummaryStats.md) |  | [optional] 
-**type** | **object** |  | [optional] 
-**updated_date** | **object** |  | [optional] 
-**works_api_url** | **object** |  | [optional] 
-**works_count** | **object** |  | [optional] 
-**x_concepts** | **object** |  | [optional] 
+**type** | **str** |  | [optional] 
+**updated_date** | **str** |  | [optional] 
+**works_api_url** | **str** |  | [optional] 
+**works_count** | **int** |  | [optional] 
+**x_concepts** | [**List[DehydratedConcept]**](DehydratedConcept.md) |  | [optional] 
 
 ## Example
 
@@ -45,7 +45,7 @@ print InstitutionSchema.to_json()
 # convert the object into a dict
 institution_schema_dict = institution_schema_instance.to_dict()
 # create an instance of InstitutionSchema from a dict
-institution_schema_form_dict = institution_schema.from_dict(institution_schema_dict)
+institution_schema_from_dict = InstitutionSchema.from_dict(institution_schema_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

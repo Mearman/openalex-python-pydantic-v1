@@ -22,7 +22,7 @@ print InternationalDisplayNameAndDescription.to_json()
 # convert the object into a dict
 international_display_name_and_description_dict = international_display_name_and_description_instance.to_dict()
 # create an instance of InternationalDisplayNameAndDescription from a dict
-international_display_name_and_description_form_dict = international_display_name_and_description.from_dict(international_display_name_and_description_dict)
+international_display_name_and_description_from_dict = InternationalDisplayNameAndDescription.from_dict(international_display_name_and_description_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

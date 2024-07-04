@@ -4,14 +4,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cited_by_count** | **object** |  | 
-**display_name** | **object** |  | 
-**entity_type** | **object** |  | 
-**external_id** | **object** |  | 
-**filter_key** | **object** |  | 
-**hint** | **object** |  | 
-**id** | **object** |  | 
-**works_count** | **object** |  | 
+**cited_by_count** | **int** |  | 
+**display_name** | **str** |  | 
+**entity_type** | **str** |  | 
+**external_id** | **str** |  | 
+**filter_key** | **str** |  | 
+**hint** | **str** |  | 
+**id** | **str** |  | 
+**works_count** | **int** |  | 
 
 ## Example
 
@@ -28,7 +28,7 @@ print AutoCompleteResultItem.to_json()
 # convert the object into a dict
 auto_complete_result_item_dict = auto_complete_result_item_instance.to_dict()
 # create an instance of AutoCompleteResultItem from a dict
-auto_complete_result_item_form_dict = auto_complete_result_item.from_dict(auto_complete_result_item_dict)
+auto_complete_result_item_from_dict = AutoCompleteResultItem.from_dict(auto_complete_result_item_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

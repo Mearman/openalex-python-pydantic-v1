@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **meta** | [**NgramMeta**](NgramMeta.md) |  | [optional] 
-**ngrams** | **object** |  | [optional] 
+**ngrams** | [**List[NgramInner]**](NgramInner.md) |  | [optional] 
 
 ## Example
 
@@ -22,7 +22,7 @@ print Ngrams.to_json()
 # convert the object into a dict
 ngrams_dict = ngrams_instance.to_dict()
 # create an instance of Ngrams from a dict
-ngrams_form_dict = ngrams.from_dict(ngrams_dict)
+ngrams_from_dict = Ngrams.from_dict(ngrams_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

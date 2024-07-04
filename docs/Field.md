@@ -4,19 +4,19 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cited_by_count** | **object** |  | 
-**created_date** | **object** |  | 
-**description** | **object** |  | 
-**display_name** | **object** |  | 
-**display_name_alternatives** | **object** |  | 
+**cited_by_count** | **int** |  | 
+**created_date** | **str** |  | 
+**description** | **str** |  | 
+**display_name** | **str** |  | 
+**display_name_alternatives** | **List[str]** |  | 
 **domain** | [**TopicLevelSchema**](TopicLevelSchema.md) |  | 
-**id** | **object** |  | 
+**id** | **str** |  | 
 **ids** | [**Ids**](Ids.md) |  | 
 **siblings** | [**TopicLevelArraySchema**](TopicLevelArraySchema.md) |  | 
 **subfields** | [**TopicLevelArraySchema**](TopicLevelArraySchema.md) |  | 
-**updated_date** | **object** |  | 
-**works_api_url** | **object** |  | 
-**works_count** | **object** |  | 
+**updated_date** | **str** |  | 
+**works_api_url** | **str** |  | 
+**works_count** | **int** |  | 
 
 ## Example
 
@@ -33,7 +33,7 @@ print Field.to_json()
 # convert the object into a dict
 field_dict = field_instance.to_dict()
 # create an instance of Field from a dict
-field_form_dict = field.from_dict(field_dict)
+field_from_dict = Field.from_dict(field_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

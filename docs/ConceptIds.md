@@ -4,11 +4,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mag** | **object** |  | [optional] 
-**openalex** | **object** |  | 
-**umls_cui** | **object** |  | [optional] 
-**wikidata** | **object** |  | [optional] 
-**wikipedia** | **object** |  | [optional] 
+**mag** | **str** |  | [optional] 
+**openalex** | **str** |  | 
+**umls_cui** | **List[str]** |  | [optional] 
+**wikidata** | **str** |  | [optional] 
+**wikipedia** | **str** |  | [optional] 
 
 ## Example
 
@@ -25,7 +25,7 @@ print ConceptIds.to_json()
 # convert the object into a dict
 concept_ids_dict = concept_ids_instance.to_dict()
 # create an instance of ConceptIds from a dict
-concept_ids_form_dict = concept_ids.from_dict(concept_ids_dict)
+concept_ids_from_dict = ConceptIds.from_dict(concept_ids_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

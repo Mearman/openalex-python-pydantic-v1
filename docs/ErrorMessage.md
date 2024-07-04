@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**error** | **object** |  | 
-**message** | **object** |  | 
+**error** | **str** |  | 
+**message** | **str** |  | 
 
 ## Example
 
@@ -22,7 +22,7 @@ print ErrorMessage.to_json()
 # convert the object into a dict
 error_message_dict = error_message_instance.to_dict()
 # create an instance of ErrorMessage from a dict
-error_message_form_dict = error_message.from_dict(error_message_dict)
+error_message_from_dict = ErrorMessage.from_dict(error_message_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

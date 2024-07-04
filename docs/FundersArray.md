@@ -4,9 +4,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group_by** | **object** |  | 
+**group_by** | [**List[GroupByResultInner]**](GroupByResultInner.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
-**results** | **object** |  | [optional] 
+**results** | [**List[FunderSchema]**](FunderSchema.md) |  | [optional] 
 
 ## Example
 
@@ -23,7 +23,7 @@ print FundersArray.to_json()
 # convert the object into a dict
 funders_array_dict = funders_array_instance.to_dict()
 # create an instance of FundersArray from a dict
-funders_array_form_dict = funders_array.from_dict(funders_array_dict)
+funders_array_from_dict = FundersArray.from_dict(funders_array_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
